@@ -1,0 +1,33 @@
+# --- Secrets / personal config: never commit these ---
+.env
+.env.*
+!.env.example
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# --- OS / editor ---
+.DS_Store
+.vscode/
+.idea/
+
+# --- Claude Code project-local state (not part of this project) ---
+.claude/
+.superpowers/
+
+# --- Unrelated outputs living in this same working directory ---
+# (deep-research notes/report from a separate task, not part of the
+# BitAxeMCP project itself)
+research_notes/
+reports/
